@@ -35,3 +35,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+
+// For Who we are video so that video automatically start when user go to this video section 
+
+  document.addEventListener("DOMContentLoaded", function() {
+  const videoPlayer = document.getElementById('videoPlayer');
+  let videoPlayed = false;
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5 // The video will autoplay when 50% of it is visible on the screen
+  };
+
+  const callback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !videoPlayed) {
+        videoPlayer.play();
+        videoPlayed = true;
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(callback, options);
+  observer.observe(videoPlayer);
+});
+
+  
