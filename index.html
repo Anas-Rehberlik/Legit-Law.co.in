@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Legit Law</title>
+
+
   <link rel="stylesheet" href="/style.css">
   <script defer type="module" src="/main.js"></script>
 
@@ -13,6 +15,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+<!-- Favicon Start -->
+<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/ico" href="/assets/favicon.ico">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+
+<!-- Android Chrome Icons -->
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+
+<!-- Favicon End -->
+
 
 
 
@@ -24,11 +43,10 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
 
 <body class=" bg-cover bg-center bg-fixed  bg-no-repeat bg-image1 md:bg-image2">
-  
+
 
   <!-- Header  -->
   <div id="header-placeholder"></div>
-  
 
 
 
@@ -42,12 +60,12 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
     <div class="relative w-full h-full">
 
-      <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-        <source src="v3.mp4" type="video/mp4">
+      <video class="hidden md:block w-full h-full object-cover" autoplay loop muted playsinline>
+        <source src="/assets/videos/hero-bg.mp4" type="video/mp4">
 
       </video>
 
-      <!-- <img class="w-full h-full object-cover" src="images/img6.jpg" alt=""> -->
+      <img class="md:hidden w-full h-full object-cover" src="/assets/images/bg-image-1.jpg" alt="">
 
 
       <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -55,7 +73,7 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
       <div class="absolute inset-0 flex flex-col items-center justify-center">
         <h1 class="text-4xl md:text-6xl text-white 	font-extrabold
         font-Montserrat mb-4  text-center">Welcome to Legit Law</h1>
-        <p class="text-2xl md:text-3xl text-white font-Montserrat font-semibold text-center">Your Trusted Legal
+        <p class="text-xl md:text-3xl text-white font-Montserrat font-bold text-center">Your Trusted Legal
           Assistance</p>
 
 
@@ -68,7 +86,7 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
         <div class="mt-4 md:mt-8">
           <a href="/contact.html"
-            class="inline-block rounded bg-white px-6 py-3 text-base font-Montserrat font-bold text-black transition hover:bg-gray-600  hover:text-white  hover:duration-700  focus:outline-none focus:ring focus:ring-red-600">
+            class="inline-block rounded-lg bg-white px-6 py-3 text-base md:text-lg  font-Montserrat font-bold text-gray-950 transition hover:bg-gray-700  hover:text-white  hover:duration-500  focus:outline-none focus:ring focus:ring-gray-950">
             Contact Us Today
           </a>
         </div>
@@ -98,20 +116,23 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
   <!-- Container -->
 
+
+
   <div class=" container mb-1  px-5  my-24 mx-auto md:px-6">
 
 
     <!-- for bg black color  -->
-          <div class="absolute top-[400px] left-0 w-full h-[4900px] sm:h-[4000px] md:h-[3908px] lg:h-[2600px] xl:h-[2561px] bg-black bg-opacity-70 z-[-1]"></div>
-          <!-- top: 400px;
-          height: 4900px 6200px 3400px -->
+    <!-- <div
+      class="absolute top-[400px] left-0 w-full h-[4900px] sm:h-[4000px] md:h-[3908px] lg:h-[2600px] xl:h-[2961px] bg-black bg-opacity-70 z-[-1]">
+    </div> -->
+
+    <div class="fixed inset-0 bg-black bg-opacity-70 z-[-1]"></div>
 
 
 
 
 
 
- 
 
     <!-- <h1 class="sm:text-3xl text-center px-5 py-24 text-2xl font-medium title-font mb-4 text-gray-900">Who we are </h1> -->
 
@@ -120,24 +141,29 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
       <div class=" flex flex-wrap">
         <div class=" mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
           <div class=" flex lg:py-12">
+
+
             <!-- <img src="https://mdbcdn.b-cdn.net/img/new/standard/people/033.jpg"
             class="w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px] z-[10]" alt="image" /> -->
-            <video id="videoPlayer" class=" w-full h-full rounded-lg shadow-xl dark:shadow-black/40 lg:ml-[50px] z-[10]"
-              controls>
-              <source src="Promo.mp4" type="video/mp4">
+
+
+            <video id="videoPlayer"
+              class=" w-full h-full rounded-lg shadow-xl dark:shadow-gray-800/40 lg:ml-[50px] z-[10]" controls>
+              <source src="/assets/videos/legit-law-Intro.mp4" type="video/mp4">
             </video>
           </div>
         </div>
-        <div class="w-full  shrink-0 grow-0 basis-auto lg:w-7/12">
+        <div class="w-full  shrink-0 grow-0 basis-auto lg:w-7/12 ">
 
           <div
-            class="flex font-Montserrat shadow-2xl  dark:shadow-black/50  h-full items-center rounded-lg bg-white p-6 text-left md:text-center text-white lg:pl-12 lg:text-left">
+            class=" flex font-Montserrat shadow-2xl  dark:shadow-black/50  h-full items-center rounded-lg bg-white p-4 text-left md:text-center text-white lg:pl-12 lg:text-left">
 
-            <div class="lg:pl-12  text-black">
-              <h2 class="mb-6 text-4xl font-bold text-white bg-slate-500 rounded-lg p-6">
+            <div class=" lg:pl-12  text-black">
+              <h2
+                class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left text-white bg-gray-700 rounded-lg p-4 md:p-6">
                 Who we are
               </h2>
-              <p class="text-gray-600 font-semibold text-justify mb-6 pb-2 lg:pb-0">
+              <p class="text-gray-950 font-medium  text-sm md:text-base  text-justify mb-6 pb-2 lg:pb-0">
                 Legit Law simplifies finding reliable legal representation by connecting clients with top-tier lawyers
                 across various fields of law. We offer personalized and expert services for everyday legal matters and
                 complex cases. Trust, transparency, and integrity are at the core of our commitment to providing the
@@ -145,13 +171,16 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
 
               </p>
-              <a href="/about.html">
-              <button type=" button"
-                class="rounded-full border-2 border-black px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-black transition duration-150 ease-in-out hover:border-black hover:bg-gray-600 hover:bg-opacity-100 hover:text-white focus:border-black focus:text-black focus:outline-none focus:ring-0 active:border-neutral-200 active:text-gray-600"
-                data-te-ripple-init data-te-ripple-color="light">
-                know more
-              </button>
-              </a>
+
+              <div class="flex justify-center md:justify-normal">
+                <a href="">
+                  <button type=" button"
+                    class="rounded-full border-2 border-black px-7 pb-2.5 pt-3 text-xs lg:text-sm font-semibold uppercase leading-normal text-gray-950 transition duration-150 ease-in-out hover:border-black hover:bg-gray-700 hover:bg-opacity-100 hover:text-white focus:border-black focus:text-black focus:outline-none focus:ring-0 active:border-neutral-200 active:text-white"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    know more
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -159,8 +188,11 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
 
     </section>
+
     <!-- Section: Design Block -->
   </div>
+
+
   <!-- Container -->
 
   <!-- Who we are end here ----------------------------------------------------------------------------------------------- -->
@@ -170,22 +202,24 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
 
   <!-- Services Section Start   ----------------------------------------------------------------------------------------------------------->
-  
+
   <!-- give bg color if you dont want transparent bg  -->
-  <section id="Services" class="  text-gray-600 body-font">
+  <section id="Services" class="  text-gray-600 body-font  ">
 
 
 
     <div class="container pt-32 px-5 py-20 mx-auto">
-   
+
 
       <div class="flex flex-col text-center w-full mb-10 bg-white  rounded-lg  p-4 font-Montserrat ">
 
-        <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-white  bg-slate-500 rounded-lg  p-3   ">Legal
+        <h1
+          class="md:text-3xl text-2xl lg:text-4xl font-bold title-font lg:mb-4 text-white  bg-gray-700 rounded-lg  p-4 md:p-6   ">
+          Legal
           Services</h1>
         <!-- <p class="hidden lg:block lg:w-2/3 mx-auto leading-relaxed text-base font-semibold font-Montserrat"> -->
 
-        <p class="hidden lg:block  text-gray-600 lg:w-2/3 mx-auto leading-relaxed  text-lg font-semibold "> Our
+        <p class="hidden lg:block  text-gray-950 lg:w-2/3 mx-auto leading-relaxed  text-lg font-medium "> Our
           comprehensive range of services, is designed to meet your specific requirements.
 
           <!-- Trust our experienced team to provide professional guidance and support across different areas of law.</p> -->
@@ -200,16 +234,19 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full   ">
 
           <div
-            class="h-full flex items-center bg-white border-gray-200 border p-4 rounded-lg shadow-md hover:bg-gray-500 group  duration-500">
+            class="h-full flex items-center bg-white border-gray-200 border p-4 md:p-6 rounded-lg shadow-md hover:bg-gray-700 group  duration-500">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80"> -->
 
             <div class="flex-grow">
-              <h2 class="text-gray-900  text-xl title-font font-semibold group-hover:text-black mb-4">Family Law</h2>
-              <p class="text-gray-500 text-center group-hover:text-slate-50 font-semibold"> Assisting clients with legal matters
+              <h2
+                class="text-white text-lg md:text-2xl  title-font font-semibold group-hover:text-gray-950  mb-4 bg-gray-700 rounded-lg p-3 md:p-4 group-hover:bg-white">
+                Family Law</h2>
+
+              <p class="text-gray-950 text-center group-hover:text-white font-medium  text-sm md:text-base "> Assisting
+                clients with legal matters
                 related to divorce, child custody, adoption, prenuptial agreements and other family-related issues.
               </p>
             </div>
-
           </div>
 
         </div>
@@ -221,11 +258,16 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 
           <div
-            class="h-full flex items-center  bg-white border-gray-200 border p-4 rounded-lg hover:bg-gray-500 group duration-500">
+            class="h-full flex items-center  bg-white border-gray-200 border p-4 md:p-6  rounded-lg hover:bg-gray-700 group duration-500">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84"> -->
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-semibold  text-xl  mb-4">Criminal Law</h2>
-              <p class="text-gray-500 text-center font-semibold group-hover:text-slate-50 ">Legal representation for individuals facing criminal charges,including defense in trials,plea negotiations and handling criminal appeals.
+
+              <h2 class=" text-white bg-gray-700  group-hover:text-gray-950  rounded-lg p-3 md:p-4 group-hover:bg-white
+               title-font font-semibold text-lg md:text-2xl  mb-4 ">Criminal Law</h2>
+
+              <p class="text-gray-950 text-center font-medium  text-sm md:text-base group-hover:text-white ">Legal
+                representation for individuals facing criminal charges,including defense in trials,plea negotiations and
+                handling criminal appeals.
 
               </p>
             </div>
@@ -237,11 +279,14 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div
-            class="h-full flex items-center  bg-white border-gray-200 border p-4 rounded-lg hover:bg-gray-500 group duration-500">
+            class="h-full flex items-center  bg-white border-gray-200 border p-4 md:p-6  rounded-lg hover:bg-gray-700 group duration-500">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88"> -->
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-semibold text-xl  mb-4">Civil Litigation</h2>
-              <p class="text-gray-500 text-center font-semibold group-hover:text-slate-50 "> Representing clients in legal disputes
+              <h2 class=" text-white bg-gray-700  group-hover:text-gray-950  rounded-lg p-3 md:p-4 group-hover:bg-white
+               title-font font-semibold text-lg md:text-2xl mb-4">Civil Litigation</h2>
+
+              <p class="text-gray-950 text-center font-medium  text-sm md:text-base group-hover:text-white ">
+                Representing clients in legal disputes
                 and lawsuits in civil matters, such as contract disputes, personal injury claims, and property disputes.
               </p>
             </div>
@@ -255,11 +300,14 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 
           <div
-            class="bg-white  h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-gray-500 group duration-500">
+            class="bg-white  h-full flex items-center border-gray-200 border p-4 md:p-6  rounded-lg hover:bg-gray-700 group duration-500">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90"> -->
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-semibold text-xl  mb-4 ">Corporate Law</h2>
-              <p class="text-gray-500 text-center font-semibold group-hover:text-slate-50 "> Legal services related to business
+              <h2 class=" text-white bg-gray-700  group-hover:text-gray-950  rounded-lg p-3 md:p-4 group-hover:bg-white
+               title-font font-semibold text-lg md:text-2xl  mb-4 ">Corporate Law</h2>
+
+              <p class="text-gray-950 text-center font-medium  text-sm md:text-base group-hover:text-white "> Legal
+                services related to business
                 formation, contracts, mergers and acquisitions, corporate governance,intellectual property and
                 compliance.
               </p>
@@ -275,11 +323,14 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 
           <div
-            class="bg-white  h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-gray-500 group  duration-500">
+            class="bg-white  h-full flex items-center border-gray-200 border p-4 md:p-6  rounded-lg hover:bg-gray-700 group  duration-500">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94"> -->
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-semibold text-xl  mb-4">Real Estate Law</h2>
-              <p class="text-gray-500 text-center font-semibold group-hover:text-slate-50 "> Handling legal matters related to real
+              <h2 class=" text-white bg-gray-700  group-hover:text-gray-950  rounded-lg p-3 md:p-4 group-hover:bg-white
+              title-font font-semibold text-lg md:text-2xl  mb-4">Real Estate Law</h2>
+
+              <p class="text-gray-950 text-center font-medium  text-sm md:text-base group-hover:text-white "> Handling
+                legal matters related to real
                 estate transactions, property disputes, landlord-tenant issues, zoning regulations, and property
                 development.
               </p>
@@ -296,11 +347,14 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 
           <div
-            class="bg-white  h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-gray-500 group duration-500 ">
+            class="bg-white  h-full flex items-center border-gray-200 border p-4 md:p-6  rounded-lg hover:bg-gray-700 group duration-500 ">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/98x98"> -->
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-semibold text-xl  mb-4">Employment Law</h2>
-              <p class="text-gray-500 text-center font-semibold group-hover:text-slate-50 ">Advising clients on employment-related
+              <h2 class="text-white bg-gray-700  group-hover:text-gray-950  rounded-lg p-3 md:p-4 group-hover:bg-white
+               title-font font-semibold text-lg md:text-2xl mb-4">Employment Law</h2>
+
+              <p class="text-gray-950 text-center font-medium  text-sm md:text-base group-hover:text-white ">Advising
+                clients on employment-related
                 matters, including workplace discrimination, wrongful termination, labor laws, and employee contracts.
               </p>
             </div>
@@ -314,11 +368,15 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div
-            class="bg-white  h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-gray-500 group duration-500">
+            class="bg-white  h-full flex items-center border-gray-200 border p-4 md:p-6  rounded-lg hover:bg-gray-700 group duration-500">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90"> -->
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-semibold text-xl  mb-4">Intellectual Property Law</h2>
-              <p class="text-gray-500 text-center font-semibold group-hover:text-slate-50 ">Assistance with protecting and managing
+
+              <h2 class="  text-white bg-gray-700  group-hover:text-gray-950  rounded-lg p-3 md:p-4 group-hover:bg-white
+               title-font font-semibold text-lg md:text-2xl  mb-4">Intellectual Property Law</h2>
+
+              <p class="text-gray-950 text-center font-medium  text-sm md:text-base group-hover:text-white ">Assistance
+                with protecting and managing
                 intellectual property rights, including trademarks, copyrights, patents, and trade secrets.
               </p>
             </div>
@@ -334,11 +392,14 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 
           <div
-            class="bg-white  h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-gray-500 group duration-500">
+            class="bg-white  h-full flex items-center border-gray-200 border p-4 md:p-6  rounded-lg hover:bg-gray-700 group duration-500">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/104x94"> -->
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-semibold text-xl  mb-4">Immigration Law</h2>
-              <p class="text-gray-500 text-center  font-semibold group-hover:text-slate-50 "> Providing legal services related to
+              <h2 class=" text-white bg-gray-700  group-hover:text-gray-950  rounded-lg p-3 md:p-4 group-hover:bg-white
+               title-font font-semibold text-lg md:text-2xl  mb-4">Immigration Law</h2>
+
+              <p class="text-gray-950 text-center font-medium  text-sm md:text-base group-hover:text-white "> Providing
+                legal services related to
                 immigration matters, such as visa applications, citizenship, deportation defense, and asylum
                 applications.
               </p>
@@ -355,11 +416,13 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
 
           <div
-            class="bg-white  h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-gray-500 group duration-500">
+            class="bg-white  h-full flex items-center border-gray-200 border p-4 md:p-6  rounded-lg hover:bg-gray-700 group duration-500">
             <!-- <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/108x98"> -->
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-semibold text-xl  mb-4 ">Legal Documentation</h2>
-              <p class="text-gray-500  text-center font-semibold group-hover:text-slate-50 ">Creating accurate and customized legal
+              <h2 class=" text-white bg-gray-700  group-hover:text-gray-950  rounded-lg p-3 md:p-4 group-hover:bg-white
+               title-font font-semibold text-lg md:text-2xl  mb-4 ">Legal Documentation</h2>
+              <p class="text-gray-950  text-center font-medium  text-sm md:text-base group-hover:text-white ">Creating
+                accurate and customized legal
                 documents,such as contracts and agreements,so you can concentrate on your legal matters with confidence.
               </p>
             </div>
@@ -392,15 +455,18 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
 
   <!-- <section class="bg-white dark:bg-gray-900"> -->
-  <section class="  ">
+
+  <section id="Whyus" class=" ">
 
     <div class="font-Montserrat container px-6 py-10 mx-auto">
 
       <div class="lg:flex lg:items-center ">
 
-        <div class="w-full space-y-[1.6rem] lg:w-1/2 bg-white rounded-lg p-6 ">
+        <div class="w-full space-y-[1.6rem] lg:w-1/2 bg-white rounded-lg p-4  ">
           <div>
-            <h1 class="text-2xl font-bold text-white text-center capitalize lg:text-3xl bg-slate-500 rounded-lg p-6">Why
+            <h1
+              class="text-2xl font-bold text-white text-center capitalize md:text-3xl lg:text-4xl bg-gray-700 rounded-lg p-4 md:p-6">
+              Why
               Choose <br> Legit Law</h1>
 
             <!-- <div class="mt-2">
@@ -411,68 +477,90 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
             </div> -->
           </div>
 
-          <div class="md:flex md:items-start md:-mx-4">
-            <span
-              class="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-              </svg>
-            </span>
 
-            <div class="mt-4 md:mx-4 md:mt-0">
-              <h1 class="text-xl font-semibold text-gray-700 capitalize ">Comprehensive Services</h1>
-              <!-- <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Copy & paste components</h1> -->
 
-              <p class="mt-3 text-justify text-gray-500 font-semibold">
+          <!-- 1st Heading  -->
+
+          <div class="md:flex md:items-start md:-mx-4 ">
+
+            <!-- <span class="hidden   md:inline-block p-2  rounded-xl md:mx-4  ">
+              
+             
+                <img src="/images/gavel-1.svg" alt="Gavel Icon" class=" w-32 h-auto object-contain bg-white"  />
+
+
+            </span> -->
+
+            <div class="mt-4 md:mx-4 md:mt-0 bg-white group duration-500 hover:bg-gray-700 rounded-lg p-4 ">
+
+              <h1
+                class="text-xl md:text-2xl text-center  font-semibold text-white capitalize  rounded-lg p-2 md:p-4 group-hover:bg-white bg-gray-700  group-hover:text-gray-950">
+                Comprehensive Services</h1>
+
+
+              <p
+                class="mt-3  text-center md:text-justify text-gray-950 font-medium  group-hover:text-white text-sm md:text-base  ">
                 Legit Law offers a wide range of comprehensive legal services, catering to all your legal needs under
                 one roof. Our team of experts is providing efficient and effective solutions tailored to your
                 requirements.
 
-
-
               </p>
             </div>
           </div>
 
+
+
+
+
+
+
+
+
+          <!-- 2nd Heading  -->
           <div class="md:flex md:items-start md:-mx-4">
-            <span
-              class="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-              </svg>
-            </span>
 
-            <div class="mt-4 md:mx-4 md:mt-0">
-              <h1 class="text-xl font-semibold text-gray-700 capitalize ">Trusted Legal Partners</h1>
+            <!-- <span class="hidden md:inline-block p-2   rounded-xl md:mx-4 ">
 
-              <p class="mt-3 text-justify text-gray-500 font-semibold">
+              <img src="/images/handshake-2.svg" alt="Handshake Icon" class=" w-32 h-auto object-contain"  />
 
-                Our network of trusted lawyers guarantees top-tier representation. With our experienced professionals,
-                your legal matters are in capable hands, ensuring the best outcomes for you.
+            </span> -->
+
+
+
+            <div class="mt-4 md:mx-4 md:mt-0 bg-white group duration-500 hover:bg-gray-700 rounded-lg p-4 ">
+
+              <h1
+                class="text-xl md:text-2xl font-semibold text-white capitalize text-center rounded-lg p-2 md:p-4 group-hover:bg-white bg-gray-700  group-hover:text-gray-950">
+                Trusted Legal Partners</h1>
+
+              <p
+                class="mt-3 text-center md:text-justify text-gray-950 font-medium  group-hover:text-white text-sm md:text-base ">
+                Our network of trusted lawyers guarantees top-tier representation. With our experienced
+                professionals,your legal matters are in capable hands, ensuring the best outcomes for you.
               </p>
+
             </div>
           </div>
 
+
+
+
+
+          <!-- 3rd Heading  -->
           <div class="md:flex md:items-start md:-mx-4">
-            <span
-              class="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-              </svg>
-            </span>
 
-            <div class="mt-4 md:mx-4 md:mt-0">
-              <h1 class="text-xl font-semibold text-gray-700 capitalize ">Client-Centric Approach</h1>
+            <!-- <span class="hidden md:inline-block p-2  rounded-xl md:mx-4 ">
+              <img src="/images/customer4.svg" alt="Client Icon" class=" w-32 h-auto object-contain" />
+            </span> -->
 
-              <p class="mt-3 text-justify text-gray-500  font-semibold">
+            <div class="mt-4 md:mx-4 md:mt-0  bg-white group duration-500 hover:bg-gray-700 rounded-lg p-4 ">
+
+              <h1
+                class="text-xl md:text-2xl font-semibold text-white capitalize  text-center  rounded-lg p-2 md:p-4 group-hover:bg-white bg-gray-700  group-hover:text-gray-950">
+                Client-Centric Approach</h1>
+
+              <p
+                class="mt-3 text-center md:text-justify text-gray-950  font-medium group-hover:text-white text-sm md:text-base ">
                 At Legit Law, Our client-centric approach means that we are committed to providing personalized
                 attention, clear communication, and proactive guidance throughout your legal journey.
 
@@ -481,8 +569,10 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
           </div>
         </div>
 
+
+
         <div class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
-          <img class="w-[28rem] h-[28rem] object-cover xl:w-[30rem] xl:h-[30rem] rounded-2xl" src="images/hand2.jpg"
+          <img class="w-[30rem] h-[30rem] object-cover xl:w-[30rem] xl:h-[30rem] rounded-2xl" src="/assets/images/handshake-img.jpg"
             alt="">
         </div>
       </div>
@@ -504,9 +594,12 @@ style=" background-image:  url('images/img9.jpg');  height: 100vh;">   -->
 
 
 
- <!-- Foootar  -->
+  <!-- Foootar  -->
 
- <div id="footer-placeholder"></div>
+  <div id="footer-placeholder"></div>
+
+
+
 
 
 
