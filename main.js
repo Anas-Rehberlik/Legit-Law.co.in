@@ -1,6 +1,9 @@
 
 
-// For navbar and header and footer
+
+
+// Navbar Dropdown Button
+
 function initializeNavbar() {
   const button = document.querySelector('[data-collapse-toggle]');
   const menu = document.querySelector('#mobile-menu-2');
@@ -8,7 +11,7 @@ function initializeNavbar() {
   const menuIcon = document.querySelector('.menu-icon');
   const closeIcon = document.querySelector('.close-icon');
 
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function () {
     const expanded = this.getAttribute('aria-expanded') === 'true' || false;
     this.setAttribute('aria-expanded', !expanded);
     menu.classList.toggle('hidden');
@@ -16,8 +19,8 @@ function initializeNavbar() {
     closeIcon.classList.toggle('hidden');
   });
 
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
       button.setAttribute('aria-expanded', 'false');
       menu.classList.add('hidden');
       menuIcon.classList.remove('hidden');
@@ -26,15 +29,19 @@ function initializeNavbar() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Load the header HTML
   fetch('/header.html')
     .then(response => response.text())
     .then(html => {
       // Insert the header HTML into the document
       document.getElementById('header-placeholder').innerHTML = html;
+
       // Call the function to initialize the navbar
       initializeNavbar();
+
+      // Continue with other JavaScript code related to the header
+      // ...
     });
 
   // Load the footer HTML
@@ -44,25 +51,8 @@ document.addEventListener("DOMContentLoaded", function() {
       // Insert the footer HTML into the document
       document.getElementById('footer-placeholder').innerHTML = html;
     });
-});
 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-// For Who we are video so that video automatically start when user go to this video section 
-
-  document.addEventListener("DOMContentLoaded", function() {
+  // For Who we are video so that video automatically starts when the user goes to this video section
   const videoPlayer = document.getElementById('videoPlayer');
   let videoPlayed = false;
 
@@ -84,6 +74,3 @@ document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver(callback, options);
   observer.observe(videoPlayer);
 });
-
-
-
