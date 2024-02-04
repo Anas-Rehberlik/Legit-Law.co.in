@@ -16,6 +16,8 @@ export default defineConfig({
         contact: path.resolve(__dirname, './contact.html'),
         header: path.resolve(__dirname, './header.html'),
         footer: path.resolve(__dirname, './footer.html'),
+        privacypolicy: path.resolve(__dirname, './privacy-policy.html'),
+        termsandcoditions: path.resolve(__dirname, './terms-and-conditions.html'),
 
 
         // main: './index.html',
